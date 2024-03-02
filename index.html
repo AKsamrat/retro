@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/fdf0cfc1c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./retro.css">
+</head>
+
+<body class="mulish">
+  <header class="container mx-auto mt-10 lg:px-24 px-8 ">
+
+    <!-- navbar start===  -->
+    <nav>
+      <div class="flex justify-between items-center">
+        <img src="./images/logo.png" alt="">
+        <div class="flex justify-end items-center gap-4 ">
+          <div class="tooltip hidden lg:flex " data-tip="Home">
+            <button class="btn rounded-full"><i class="fa-solid fa-house"></i></button>
+          </div>
+          <div class="tooltip hidden lg:flex" data-tip="Comment">
+            <button class="btn rounded-full"><i class="fa-solid fa-pen"></i></i></button>
+          </div>
+          <div class="tooltip hidden lg:flex" data-tip="Profile">
+            <button class="btn rounded-full"><i class="fa-regular fa-user"></i></button>
+          </div>
+          <div class="tooltip mr-3 hidden lg:flex" data-tip="Notification ">
+            <button class="btn rounded-full"><i class="fa-regular fa-font-awesome"></i></button>
+          </div>
+          <button class="text-white px-4 py-2 rounded-2xl bg-[#797DFC] font-normal ">Sign In</button>
+        </div>
+      </div>
+    </nav>
+    <!-- banner start====  -->
+    <div class="mt-8">
+
+      <div class="bg-[linear-gradient(180deg,rgba(18,19,45,1),rgba(8,9,17,0.2)),url('./images/bgbanner.png')] w-full bg-no-repeat
+          bg-cover rounded-[32px] h-[420px] lg:h-full ">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-20 p-2 lg:p-8">
+          <div>
+            <h3 class="text-3xl lg:text-6xl text-white font-bold text-center lg:text-start ">Welcome to the <br> <span
+                class="retro text-3xl lg:text-6xl">ReTro</span>
+              Forum
+            </h3>
+            <p class="font-medium text-[20px] text-white py-6 text-center lg:text-start ">Share your favorite opinion
+              and win and wp <br>forum
+              coffee mug!
+            </p>
+            <div class="flex justify-center items-center bg-white rounded-2xl lg:w-4/6 py-1">
+              <input type="text" name="" id="" placeholder="Search here anything">
+              <button class="text-white px-4 py-2 rounded-2xl bg-[#797DFC] font-normal ">Search</button>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-2 lg:p-8">
+            <p class="font-medium">Registered Users <span class="pl-12 font-medium">01</span></p>
+            <p class="font-medium lg:py-4">Forum <span class="pl-32 font-medium">05</span></p>
+            <p class="font-medium">Topics <span class="pl-32 font-medium">01</span></p>
+            <p class="font-medium lg:py-4">Replies <span class="pl-[125px] font-medium">01</span></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto  lg:px-24 px-8">
+
+    <!-- discus section start====  -->
+    <section class="mt-6">
+      <div>
+        <h3 class="font-extrabold text-[40px] text-center">Let’s Discuss</h3>
+        <p class="font-normal inter py-4 text-center">Yes, you can run unit tests and view the results directly within
+          the
+          app. The
+          <br>integrated testing features
+          allow for a
+          streamlined .
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-6 gap-6">
+        <!-- left side=================  -->
+        <div class="bg-[#F3F3F5] p-4 lg:p-7 rounded-2xl col-span-4">
+
+          <div class="flex justify-center gap-5">
+            <!-- pic section== -->
+            <div class="size-20 bg-white rounded-xl relative">
+              <img src="" alt="">
+              <div class="size-5 rounded-full bg-green-800 -top-0 -right-0 absolute"> </div>
+
+            </div>
+            <!-- info section== -->
+            <div>
+              <div class="border-b-2 border-dashed border-slate-200 pb-4">
+                <div class="flex items-center gap-8">
+                  <p class="font-normal inter">#Music</p>
+                  <p class="font-normal inter">Author: <span>Awlad Hossain</span></p>
+                </div>
+                <h3 class="font-bold text-[20px] py-3"> Kids Unaware of Their Halloween Costume</h3>
+                <p class="font-normal inter">It’s one thing to subject yourself to ha Halloween costume mishap because,
+                  hey
+                  that’s your prerogative</p>
+              </div>
+              <div class="flex justify-between items-center mt-3">
+                <div class="flex justify-center items-center gap-6">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./images/tabler-icon-message-2.png" alt="">
+                    <span class="font-normal inter">560</span>
+                  </div>
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./images/tabler-icon-eye.png" alt="">
+                    <span class="font-normal inter">1,568</span>
+                  </div>
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./images/tabler-icon-clock-hour-9.png" alt="">
+                    <span class="font-normal inter">5 min</span>
+                  </div>
+                </div>
+                <div class="size-8 rounded-full bg-green-800 flex justify-center items-center text-white">
+                  <i class="fa-solid fa-envelope-open"></i>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+        <!-- right side ==========================  -->
+        <div class="bg-[#F3F3F5] p-4 lg:p-7 rounded-2xl col-span-2">
+          <div class="flex justify-between items-center">
+            <h3 class="text-[20px] font-bold">Title</h3>
+            <p class="font-normal inter">Mark As read <span>(4)</span></p>
+          </div>
+          <div class="bg-white rounded-xl flex justify-between items-center p-4">
+            <h3>10 Kids Unaware of Their Halloween Costume</h3>
+            <div class="flex justify-center items-center gap-2">
+              <img src="./images/tabler-icon-eye.png" alt="">
+              <span class="font-normal inter">1,568</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
