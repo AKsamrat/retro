@@ -38,8 +38,9 @@
     <!-- banner start====  -->
     <div class="mt-8">
 
-      <div class="bg-[linear-gradient(180deg,rgba(18,19,45,1),rgba(8,9,17,0.1)),url('./images/bgbanner.png')] w-full bg-no-repeat
-          bg-cover rounded-[32px] h-[420px] lg:h-full flex justify-center items-center ">
+      <div class="bg-[linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,0.2)),url('./images/bgbanner.png')] w-full bg-no-repeat
+          bg-cover rounded-[32px] h-[420px] lg:h-full  ">
+        <!-- <div class="banner"> -->
         <div class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-44 p-2 lg:px-6 lg:py-16">
           <div>
             <h3 class="text-3xl lg:text-6xl text-white font-extrabold text-center lg:text-start ">Welcome to the <br>
@@ -51,7 +52,7 @@
               coffee mug!
             </p>
             <div class="flex justify-between items-center bg-white rounded-3xl  p-1">
-              <input type="text" name="" id="search-text" placeholder="Search here anything" class="w-full ">
+              <input type="text" name="" id="search-text" placeholder=" Search here anything" class="w-full ">
               <button onclick="searchBtn()"
                 class="text-white px-6 py-2 rounded-3xl bg-[#797DFC] font-bold ">Search</button>
             </div>
@@ -99,7 +100,10 @@
         <div class="bg-[#F3F3F5] p-3 lg:p-5 rounded-2xl lg:col-span-2 h-fit">
           <div class="flex justify-between items-center">
             <h3 class="text-[20px] font-bold">Title</h3>
-            <p class="font-bold inter">Mark As read (<span id="info-count">0</span>)</p>
+            <div class="flex justify-end items-center">
+              <img id="tik-mark" class="hidden" src="./images/Frame (2).png" alt="">
+              <p class="font-bold inter">Mark As read (<span id="info-count">0</span>)</p>
+            </div>
           </div>
           <div id="info-container" class="space-y-4">
             <!-- <div  class="bg-white rounded-xl flex justify-between items-center p-4 gap-4"> -->

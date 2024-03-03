@@ -132,6 +132,11 @@ const addInfo = (title, count) => {
   // console.log(title);
   inCount++;
   document.getElementById('info-count').innerText = inCount;
+  if (inCount > 0) {
+    document.getElementById('tik-mark').classList.remove('hidden');
+  } else {
+    document.getElementById('tik-mark').classList.add('hidden');
+  }
 
   const div = document.createElement('div');
   const infoContainer = document.getElementById('info-container');
