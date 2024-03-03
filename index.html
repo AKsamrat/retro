@@ -38,12 +38,12 @@
     <!-- banner start====  -->
     <div class="mt-8">
 
-      <div class="bg-[linear-gradient(180deg,rgba(18,19,45,1),rgba(8,9,17,0.2)),url('./images/bgbanner.png')] w-full bg-no-repeat
-          bg-cover rounded-[32px] h-[420px] lg:h-full ">
-        <div class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-20 p-2 lg:p-8">
+      <div class="bg-[linear-gradient(180deg,rgba(18,19,45,1),rgba(8,9,17,0.1)),url('./images/bgbanner.png')] w-full bg-no-repeat
+          bg-cover rounded-[32px] h-[420px] lg:h-full flex justify-center items-center ">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-32 p-2 lg:px-6 lg:py-16">
           <div>
-            <h3 class="text-3xl lg:text-6xl text-white font-bold text-center lg:text-start ">Welcome to the <br> <span
-                class="retro text-3xl lg:text-6xl">ReTro</span>
+            <h3 class="text-3xl lg:text-6xl text-white font-extrabold text-center lg:text-start ">Welcome to the <br>
+              <span class="retro text-3xl lg:text-6xl">ReTro</span>
               Forum
             </h3>
             <p class="font-medium text-[20px] text-white py-6 text-center lg:text-start ">Share your favorite opinion
@@ -55,7 +55,7 @@
               <button class="text-white px-4 py-2 rounded-2xl bg-[#797DFC] font-normal ">Search</button>
             </div>
           </div>
-          <div class="bg-white rounded-2xl p-2 lg:p-8 lg:px-16">
+          <div class="bg-white rounded-2xl p-2 lg:py-10 lg:px-16">
             <p class="font-medium">Registered Users <span class="pl-12 font-medium">01</span></p>
             <p class="font-medium lg:py-4">Forum <span class="pl-32 font-medium">05</span></p>
             <p class="font-medium">Topics <span class="pl-32 font-medium">01</span></p>
@@ -85,15 +85,16 @@
         <!-- left side=================  -->
         <div class="bg-[#F3F3F5] p-4 lg:p-7 rounded-2xl col-span-4">
 
-          <div class="flex flex-col lg:flex-row justify-center gap-5">
+          <!-- <div class="flex flex-col lg:flex-row justify-center gap-5"> -->
+          <div class="grid grid-cols-1 lg:grid-cols-6 gap-5">
             <!-- pic section== -->
-            <div class="size-20 bg-white rounded-xl relative">
+            <div class="size-20 bg-white rounded-xl relative col-span-1">
               <img src="" alt="">
               <div class="size-5 rounded-full bg-green-800 -top-0 -right-0 absolute"> </div>
 
             </div>
             <!-- info section== -->
-            <div>
+            <div class="col-span-5">
               <div class="border-b-2 border-dashed border-slate-200 pb-4">
                 <div class="flex items-center gap-8">
                   <p class="font-normal inter">#Music</p>
@@ -131,13 +132,13 @@
 
         </div>
         <!-- right side ==========================  -->
-        <div class="bg-[#F3F3F5] p-4 lg:p-7 rounded-2xl lg:col-span-2">
+        <div class="bg-[#F3F3F5] p-3 lg:p-5 rounded-2xl lg:col-span-2">
           <div class="flex justify-between items-center">
             <h3 class="text-[20px] font-bold">Title</h3>
-            <p class="font-normal inter">Mark As read <span>(4)</span></p>
+            <p class="font-bolt inter">Mark As read <span>(4)</span></p>
           </div>
-          <div class="bg-white rounded-xl flex justify-between items-center p-4">
-            <h3>10 Kids Unaware of Their Halloween Costume</h3>
+          <div class="bg-white rounded-xl flex justify-between items-center p-4 gap-4">
+            <h3 class="text-[16px] font-semibold">10 Kids Unaware of Their Halloween Costume</h3>
             <div class="flex justify-center items-center gap-2">
               <img src="./images/tabler-icon-eye.png" alt="">
               <span class="font-normal inter">1,568</span>
@@ -163,9 +164,63 @@
       </div>
     </section>
 
-  </main>
-  <footer>
+    <!-- latest post ============================> -->
+    <section class="mt-10">
+      <div>
+        <h3 class="font-extrabold text-[40px] text-center">Latest Posts</h3>
+        <p class="font-normal inter py-4 text-center">Yes, you can run unit tests and view the results directly within
+          the
+          app. The
+          <br>integrated testing features
+          allow for a
+          streamlined .
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3">
+        <div class="border-2 border-slate-200 rounded-2xl p-5">
+          <div class=" w-80 h-48 bg-slate-200 rounded-2xl">
+            <img src="" alt="">
+          </div>
+          <div class="flex justify-start items-center gap-3 py-3">
+            <img src="./images/Frame (1).png" alt="">
+            <p class="text-[#12132D99] text-[16px]">29 January 2024</p>
+          </div>
+          <h3 class="font-extrabold text-lg">What will a mars habitat force that impact in our daily life!!!</h3>
+          <p class="text-[#12132D99] text-[16px] py-3">Yes, you can run unit tests and view the results directly within
+            the
+            app.</p>
+          <div class="flex justify-start items-center gap-4">
+            <div class="size-11 rounded-full">
+              <img src="" alt="">
+            </div>
+            <div>
+              <p class="text-[16px] font-bold">Cameron Williamson</p>
+              <p class="text-sm font-normal">Unknown</p>
+            </div>
+          </div>
 
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="bg-[#F8F8F9] p-10 lg:p-28 mt-10">
+    <div>
+      <h2 class="text-4xl font-extrabold text-center ">ReTro</h2>
+      <p class="text-[#12132D99] text-[16px] text-center py-4">Contrary to popular belief, Lorem Ipsum is not simply
+        random
+        text. It has
+        roots in a <br> piece of classical Latin literature
+        from 45 BC</p>
+    </div>
+    <div class="flex justify-center items-center gap-6 *:text-[24px] border-b-2 border-slate-200 py-5">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-github"></i>
+    </div>
+    <p class="text-[16px] text-[#12132D80] py-5 text-center">@ 2017,All rights reserved</p>
   </footer>
 
 </body>
