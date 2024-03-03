@@ -43,7 +43,7 @@ const displayPost = items => {
             <!-- info section== -->
 
             <div class="col-span-5">
-              <div class="border-b-2 border-dashed border-slate-200 hover:border-slate-400 pb-4">
+              <div class="border-b-2 border-dashed border-slate-200 hover:border-slate-300 pb-4">
                 <div class="flex items-center gap-8">
                   <p class="font-normal inter"># <span>${
                     item.category
@@ -96,14 +96,14 @@ const latestPost = async () => {
   const data = await res.json();
   data.forEach(post => {
     const div = document.createElement('div');
-    div.innerHTML = `<div class="border-2 border-slate-200 rounded-2xl p-5">
-            <div class=" w-80 h-48 bg-slate-200 rounded-2xl">
+    div.innerHTML = `<div class="border-2 border-slate-200 rounded-2xl p-5 h-full">
+            <div class=" w-86 h-48 bg-slate-200 rounded-2xl">
               <img class="rounded-2xl" src="${post.cover_image}" alt="">
             </div>
-            <div class="flex justify-start items-center gap-3 py-4 pt-6">
+            <div class="flex justify-start items-center gap-3 py-4 pt-10 lg:pt-20">
               <img src="./images/Frame (1).png" alt="">
               <p class="text-[#12132D99] text-[16px] ">${
-                post.author?.posted_date || 'Unknown'
+                post.author?.posted_date || 'No Publish date'
               }</p>
             </div>
             <h3 class="font-extrabold text-lg">${post.title}</h3>
