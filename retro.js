@@ -1,5 +1,3 @@
-let allData = '';
-
 const searchBtn = async () => {
   toggleSpinner(true);
 
@@ -94,6 +92,7 @@ const latestPost = async () => {
     'https://openapi.programming-hero.com/api/retro-forum/latest-posts'
   );
   const data = await res.json();
+  toggleSpinner(true);
   data.forEach(post => {
     const div = document.createElement('div');
     div.innerHTML = `<div class="border-2 border-slate-200 rounded-2xl p-5 h-full">
@@ -123,6 +122,7 @@ const latestPost = async () => {
           </div>`;
     latestPosts.appendChild(div);
   });
+  toggleSpinner(false);
 };
 
 // info display====
