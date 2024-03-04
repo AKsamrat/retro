@@ -11,6 +11,7 @@ const searchBtn = async () => {
   setTimeout(function () {
     displayPost(data.posts);
     toggleSpinner(false);
+    // document.getElementById('search-text').value = ' ';
   }, 2000);
 };
 
@@ -20,7 +21,7 @@ const loadAllData = async () => {
   );
   const data = await res.json();
   displayPost(data.posts);
-  allData = data.posts;
+  // allData = data.posts;
 };
 const displayPost = items => {
   const postContainer = document.getElementById('post-container');
@@ -156,7 +157,7 @@ const addInfo = (title, count) => {
 
 // spinner section=================
 const toggleSpinner = isLoading => {
-  console.log('got spinner');
+  // console.log('got spinner');
   const spinner = document.getElementById('spinner');
   if (isLoading) {
     spinner.classList.remove('hidden');
@@ -167,4 +168,3 @@ const toggleSpinner = isLoading => {
 latestPost();
 
 loadAllData();
-console.log(allData);
